@@ -312,7 +312,6 @@
  .foot-bottom.legal a:hover{color:var(--ink-muted);}
  .skip-link{position:absolute;left:-999px;top:0;background:var(--accent);color:#f5f1e8;padding:12px 18px;z-index:999;}
  .skip-link:focus{left:12px;top:12px;}
-  /* CART ADDED - ONLY NEW PART */
  .add-btn{width:100%;margin-top:12px;background:var(--ink);color:var(--bg);border:1px solid var(--ink);padding:10px;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;transition:.2s;}
  .add-btn:hover{background:transparent;color:var(--ink);}
  .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.3s;z-index:400;}
@@ -430,19 +429,23 @@
     </div>
     <div class="grid wrap" style="max-width:var(--maxw);margin:0 auto;">
       <article class="card">
-        <div class="card-media"><span class="card-tag">Bestseller</span><img src="p03-rust-crystal.jpg" alt=""></div>
+        <div class="card-media"><span class="card-tag">Bestseller</span>
+          <img src="p03-rust-crystal.jpg" alt="Rust fitted cap fully hand-set with crystals"></div>
         <div class="card-body"><div class="name">Crystal Bloom Fitted — Rust</div><div class="price">₦120,000</div><button class="add-btn" onclick="addToCart('Crystal Bloom Fitted — Rust',120000,'p03-rust-crystal.jpg')">Add to Cart</button></div>
       </article>
       <article class="card">
-        <div class="card-media"><span class="card-tag">Bestseller</span><img src="p06-red-velvet-veil.jpg" alt=""></div>
+        <div class="card-media"><span class="card-tag">Bestseller</span>
+          <img src="p06-red-velvet-veil.jpg" alt="Red cap with pearl-beaded lace veil"></div>
         <div class="card-body"><div class="name">Midnight Pearl Veil Cap</div><div class="price">₦110,000</div><button class="add-btn" onclick="addToCart('Midnight Pearl Veil Cap',110000,'p06-red-velvet-veil.jpg')">Add to Cart</button></div>
       </article>
       <article class="card">
-        <div class="card-media"><span class="card-tag">Bestseller</span><img src="p10-tan-crystal-drape.jpg" alt=""></div>
+        <div class="card-media"><span class="card-tag">Bestseller</span>
+          <img src="p10-tan-crystal-drape.jpg" alt="Tan fitted cap with draped crystal fringe"></div>
         <div class="card-body"><div class="name">Crystal Cascade Fitted — Tan</div><div class="price">₦115,000</div><button class="add-btn" onclick="addToCart('Crystal Cascade Fitted — Tan',115000,'p10-tan-crystal-drape.jpg')">Add to Cart</button></div>
       </article>
       <article class="card">
-        <div class="card-media"><span class="card-tag">Bestseller</span><img src="p11-black-gold-beaded.jpg" alt=""></div>
+        <div class="card-media"><span class="card-tag">Bestseller</span>
+          <img src="p11-black-gold-beaded.jpg" alt="Black cap with gold beaded drape and A logo"></div>
         <div class="card-body"><div class="name">Gold Rain Beaded Cap — A</div><div class="price">₦105,000</div><button class="add-btn" onclick="addToCart('Gold Rain Beaded Cap — A',105000,'p11-black-gold-beaded.jpg')">Add to Cart</button></div>
       </article>
     </div>
@@ -455,18 +458,66 @@
       </div>
     </div>
     <div class="grid wrap" style="max-width:var(--maxw);margin:0 auto;">
-      <article class="card"><div class="card-media"><span class="card-tag">New</span><img src="p01-red-lace-snapback.jpg" alt=""></div><div class="card-body"><div class="name">Red Lace Veil Snapback</div><div class="price">₦85,000</div><button class="add-btn" onclick="addToCart('Red Lace Veil Snapback',85000,'p01-red-lace-snapback.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><span class="card-tag">New</span><img src="p02-purple-floral.jpg" alt=""></div><div class="card-body"><div class="name">Wildflower Fitted — Purple</div><div class="price">₦95,000</div><button class="add-btn" onclick="addToCart('Wildflower Fitted — Purple',95000,'p02-purple-floral.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p04-red-latino-pearl.jpg" alt=""></div><div class="card-body"><div class="name">Latinoamericana Pearl Cap</div><div class="price">₦78,000</div><button class="add-btn" onclick="addToCart('Latinoamericana Pearl Cap',78000,'p04-red-latino-pearl.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><span class="card-tag limited">Limited</span><img src="p05-dodgers-bandana.jpg" alt=""></div><div class="card-body"><div class="name">Dodgers Bandana Wrap Cap</div><div class="price">₦65,000</div><button class="add-btn" onclick="addToCart('Dodgers Bandana Wrap Cap',65000,'p05-dodgers-bandana.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p07-black-la-lace.jpg" alt=""></div><div class="card-body"><div class="name">Guadalupe Lace Veil Cap</div><div class="price">₦92,000</div><button class="add-btn" onclick="addToCart('Guadalupe Lace Veil Cap',92000,'p07-black-la-lace.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p08-red-spiderweb-astros.jpg" alt=""></div><div class="card-body"><div class="name">Web & Stars Rhinestone Cap</div><div class="price">₦98,000</div><button class="add-btn" onclick="addToCart('Web & Stars Rhinestone Cap',98000,'p08-red-spiderweb-astros.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p09-cream-cupid-floral.jpg" alt=""></div><div class="card-body"><div class="name">Cupid's Bow Floral Fitted</div><div class="price">₦88,000</div><button class="add-btn" onclick="addToCart('Cupid\'s Bow Floral Fitted',88000,'p09-cream-cupid-floral.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p12-pink-striped-pearl.jpg" alt=""></div><div class="card-body"><div class="name">Pearl Stripe Cap — Pink</div><div class="price">₦72,000</div><button class="add-btn" onclick="addToCart('Pearl Stripe Cap — Pink',72000,'p12-pink-striped-pearl.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p13-maroon-plaid-pearl.jpg" alt=""></div><div class="card-body"><div class="name">Heritage Plaid Pearl Cap</div><div class="price">₦68,000</div><button class="add-btn" onclick="addToCart('Heritage Plaid Pearl Cap',68000,'p13-maroon-plaid-pearl.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p14-red-ny-pattern-pearl.jpg" alt=""></div><div class="card-body"><div class="name">Monogram Pearl Trim Cap</div><div class="price">₦75,000</div><button class="add-btn" onclick="addToCart('Monogram Pearl Trim Cap',75000,'p14-red-ny-pattern-pearl.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><span class="card-tag limited">Mixed Lot</span><img src="p15-collage-mini-caps.jpg" alt=""></div><div class="card-body"><div class="name">The Capsule Four — Mixed Lot</div><div class="price">₦180,000</div><button class="add-btn" onclick="addToCart('The Capsule Four — Mixed Lot',180000,'p15-collage-mini-caps.jpg')">Add to Cart</button></div></article>
-      <article class="card"><div class="card-media"><img src="p16-orange-lace-veil.jpg" alt=""></div><div class="card-body"><div class="name">Sacred Rose Veil Cap — Orange</div><div class="price">₦82,000</div><button class="add-btn" onclick="addToCart('Sacred Rose Veil Cap — Orange',82000,'p16-orange-lace-veil.jpg')">Add to Cart</button></div></article>
+      <article class="card">
+        <div class="card-media"><span class="card-tag">New</span>
+          <img src="p01-red-lace-snapback.jpg" alt="Red snapback with red lace veil"></div>
+        <div class="card-body"><div class="name">Red Lace Veil Snapback</div><div class="price">₦85,000</div><button class="add-btn" onclick="addToCart('Red Lace Veil Snapback',85000,'p01-red-lace-snapback.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media"><span class="card-tag">New</span>
+          <img src="p02-purple-floral.jpg" alt="Purple fitted cap with 3D floral embroidery"></div>
+        <div class="card-body"><div class="name">Wildflower Fitted — Purple</div><div class="price">₦95,000</div><button class="add-btn" onclick="addToCart('Wildflower Fitted — Purple',95000,'p02-purple-floral.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p04-red-latino-pearl.jpg" alt="Red cap with pearl trim and gold charms"></div>
+        <div class="card-body"><div class="name">Latinoamericana Pearl Cap</div><div class="price">₦78,000</div><button class="add-btn" onclick="addToCart('Latinoamericana Pearl Cap',78000,'p04-red-latino-pearl.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media"><span class="card-tag limited">Limited</span>
+          <img src="p05-【entity-dodgers¦canonical_name=Dodgers】-bandana.jpg" alt="Blue cap wrapped in a bandana with chain trim"></div>
+        <div class="card-body"><div class="name">【entity-Dodgers¦canonical_name=Dodgers】 Bandana Wrap Cap</div><div class="price">₦65,000</div><button class="add-btn" onclick="addToCart('【entity-Dodgers¦canonical_name=Dodgers】 Bandana Wrap Cap',65000,'p05-【entity-dodgers¦canonical_name=Dodgers】-bandana.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p07-black-la-lace.jpg" alt="Black cap with white lace veil, rose motif"></div>
+        <div class="card-body"><div class="name">Guadalupe Lace Veil Cap</div><div class="price">₦92,000</div><button class="add-btn" onclick="addToCart('Guadalupe Lace Veil Cap',92000,'p07-black-la-lace.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p08-red-spiderweb-astros.jpg" alt="Red cap with rhinestone spiderweb design"></div>
+        <div class="card-body"><div class="name">Web & Stars Rhinestone Cap</div><div class="price">₦98,000</div><button class="add-btn" onclick="addToCart('Web & Stars Rhinestone Cap',98000,'p08-red-spiderweb-astros.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p09-cream-cupid-floral.jpg" alt="Cream fitted cap with cupid and floral embroidery"></div>
+        <div class="card-body"><div class="name">Cupid's Bow Floral Fitted</div><div class="price">₦88,000</div><button class="add-btn" onclick="addToCart('Cupid\'s Bow Floral Fitted',88000,'p09-cream-cupid-floral.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p12-pink-striped-pearl.jpg" alt="Pink striped cap with pearls and gold cross charm"></div>
+        <div class="card-body"><div class="name">Pearl Stripe Cap — Pink</div><div class="price">₦72,000</div><button class="add-btn" onclick="addToCart('Pearl Stripe Cap — Pink',72000,'p12-pink-striped-pearl.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p13-maroon-plaid-pearl.jpg" alt="Maroon plaid cap with pearl embellishment"></div>
+        <div class="card-body"><div class="name">Heritage Plaid Pearl Cap</div><div class="price">₦68,000</div><button class="add-btn" onclick="addToCart('Heritage Plaid Pearl Cap',68000,'p13-maroon-plaid-pearl.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p14-red-ny-pattern-pearl.jpg" alt="Red monogram print cap with pearl trim"></div>
+        <div class="card-body"><div class="name">Monogram Pearl Trim Cap</div><div class="price">₦75,000</div><button class="add-btn" onclick="addToCart('Monogram Pearl Trim Cap',75000,'p14-red-ny-pattern-pearl.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media"><span class="card-tag limited">Mixed Lot</span>
+          <img src="p15-collage-mini-caps.jpg" alt="Four assorted embroidered caps in lavender, cream, tan and pink"></div>
+        <div class="card-body"><div class="name">The Capsule Four — Mixed Lot</div><div class="price">₦180,000</div><button class="add-btn" onclick="addToCart('The Capsule Four — Mixed Lot',180000,'p15-collage-mini-caps.jpg')">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <img src="p16-orange-lace-veil.jpg" alt="Orange cap with lace veil"></div>
+        <div class="card-body"><div class="name">Sacred Rose Veil Cap — Orange</div><div class="price">₦82,000</div><button class="add-btn" onclick="addToCart('Sacred Rose Veil Cap — Orange',82000,'p16-orange-lace-veil.jpg')">Add to Cart</button></div>
+      </article>
     </div>
   </section>
   <section id="issue" class="spotlight">
